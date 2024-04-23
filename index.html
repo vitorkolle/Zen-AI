@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen-AI</title>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background-principal': '#779B95',
+                        'primeira-cor-gradiente': '#4E5F5B',
+                        'segunda-cor-gradiente': '#4E9487',
+                        'input-dados': '#9EC2BC',
+                        'botao': '#6ECEBC'
+                    },
+                    fontFamily: {
+                        'titulo': ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="">
+    <div class="principal w-screen h-screen bg-background-principal flex">
+        <div class="bg-lateral h-screen w-8/12 bg-gray-950">
+            <img src="./img/Default_Crie_um_background_lateral_para_uma_IA_chamada_ZenAI_c_2.jpg" alt=""
+                class="h-full w-full object-cover opacity-75">
+        </div>
+
+        <div class="navegacao flex flex-col w-full h-full">
+
+            <div
+                class="cabecalho w-full h-32 bg-gradient-to-b from-primeira-cor-gradiente to-segunda-cor-gradiente flex justify-center items-center">
+                <h1 class="text-5xl text-white font-titulo">Zen-AI</h1>
+            </div>
+
+            <div class="formulario flex flex-col w-full h-full justify-center items-center gap-16">
+                <div class="usuario flex">
+                    <label for="" class="text-white font-titulo text-4xl">Usuário:</label>
+                    <input type="text" class="rounded-xl w-96 bg-input-dados text-white text-xl outline-none p-1">
+                </div>
+
+                <div class="senha flex ml-10">
+                    <label for="" class="text-white font-titulo text-4xl">Senha:</label>
+                    <input type="text" class="rounded-xl w-96 bg-input-dados text-white text-xl outline-none p-1">
+                </div>
+
+                <button class="w-40 h-12 bg-botao">
+                    <p class="text-white font-titulo text-xl">Entrar</p>
+                </button>
+            </div>
+
+           
+
+        </div>
+    </div>
+</body>
+
+</html>
