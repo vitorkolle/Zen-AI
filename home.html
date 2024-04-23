@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen-AI</title>
+    <script src="./js/home.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background-principal': '#779B95',
+                        'primeira-cor-gradiente': '#4E5F5B',
+                        'segunda-cor-gradiente': '#4E9487',
+                        'input-dados': '#9EC2BC',
+                        'botao': '#6ECEBC',
+                        'respostas': '#939B9A',
+                        'perguntas': '#4E9487'
+                    },
+                    fontFamily: {
+                        'titulo': ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div
+        class="bg-[url('./img/Default_Crie_um_background_lateral_para_uma_IA_chamada_ZenAI_c_2.jpg')] w-screen h-screen bg-no-repeat bg-cover">
+        <div class="w-full h-full bg-gray-950 bg-opacity-50 flex flex-col">
+
+            <div class="cabecalho w-full h-28 flex justify-center">
+                <h1 class="text-6xl text-white font-titulo mt-2">Zen-AI</h1>
+            </div>
+
+            <div class="respostas flex w-full h-3/4 justify-evenly">
+                <div class="w-2/6 h-4/5">
+                    <textarea disabled name="" id="port" cols="0" rows="0" placeholder="Resposta em Português"
+                        class="w-full h-full bg-respostas bg-opacity-70 cursor-default p-1 text-white resize-none placeholder:text-white text-2xl text-center"></textarea>
+                </div>
+                <div class="w-2/6 h-4/5">
+                    <textarea disabled name="" id="ing" cols="30" rows="10" placeholder="Resposta em Inglês"
+                        class="w-full h-full bg-respostas bg-opacity-70 cursor-default p-1 text-white resize-none placeholder:text-white text-2xl text-center"></textarea>
+                </div>
+            </div>
+
+            <div class="perguntas w-full h-24 mt-6 bg-perguntas flex">
+                <input type="text" placeholder="Digite seu comando aqui"
+                    class="h-full w-11/12 justify-center text-white bg-perguntas p-2 text-xl placeholder:text-white outline-none ml-2 bg-opacity-70 cursor-default">
+                <button id="enviar">
+                    <img src="./img/1167974_arrow_right_arrows_move_next_icon.svg" alt="" class="w-16 ml-12">
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
