@@ -30,6 +30,7 @@ async function validarLogin() {
     usuarios.forEach(element => {
         if (usuario === element.nome && senha === element.senha) {
             alert('Usuário logado com sucesso!!!')
+            validaUser = true
             window.location.href = '../home.html'
         }
     });
