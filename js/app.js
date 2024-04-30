@@ -23,6 +23,9 @@ async function validarLogin() {
     if(usuario == '' || senha == ''){
         alert('Preencha todos os campos!!')
     }
+    else{
+
+    let validaUser = false
 
     usuarios.forEach(element => {
         if (usuario === element.nome && senha === element.senha) {
@@ -30,5 +33,9 @@ async function validarLogin() {
             window.location.href = '../home.html'
         }
     });
+    if(!validaUser){
+        alert('Verifique o email e senha!!')
+    }
+}
 
 }
